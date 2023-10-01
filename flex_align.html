@@ -14,9 +14,14 @@
     }
 
     .flex-container {
+      background-color: rgb(93, 93, 189);
       display: flex;
-      /* flex-direction: row; */
-      /* flex-wrap: wrap; */
+      flex-direction: row;
+      /* Cross Axis Align */
+      align-items: center;
+      /* Main Axis Align */
+      justify-content: space-around;
+      height: 50vh;
     }
 
     .item {
@@ -29,21 +34,13 @@
       flex: 1 0 200px;
     }
 
-    .item-3 {
-      flex: 2;
+    .item-1 {
+      align-self: flex-start;
     }
 
-    /*.item-1 {
-      flex-shrink: 0;
-    }
-    .item-2 {
-      flex-grow: 1;
-      flex-basis: 0;
-    }
     .item-3 {
-      flex-grow: 2;
-      flex-basis: 0;
-    } */
+      align-self: flex-end;
+    }
 
   </style>
 </head>
